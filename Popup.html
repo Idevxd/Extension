@@ -5,37 +5,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Galxe Auto Clicker</title>
   <style>
+    /* Background and Container Styling */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-width: 250px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      margin: 0;
+      color: #fff;
       text-align: center;
-      width: 200px;
-      padding: 10px;
     }
-    button {
-      background-color: #007bff;
-      color: white;
-      border: none;
-      padding: 10px;
-      cursor: pointer;
+
+    h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #ffffff;
+      text-shadow: 0px 0px 10px rgba(0, 114, 255, 0.5);
+    }
+
+    p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: #dddddd;
+    }
+
+    /* Button Styling */
+    .button-container {
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    button {
+      background: linear-gradient(145deg, #007bff, #00c6ff);
+      border: none;
+      padding: 12px;
       font-size: 16px;
-      margin-bottom: 5px;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
+
     button:hover {
-      background-color: #0056b3;
+      background: linear-gradient(145deg, #00c6ff, #007bff);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 123, 255, 0.4);
     }
+
     #stop {
-      background-color: #dc3545;
+      background: linear-gradient(145deg, #ff4b2b, #ff416c);
     }
+
     #stop:hover {
-      background-color: #a71d2a;
+      background: linear-gradient(145deg, #ff416c, #ff4b2b);
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 12px;
+      opacity: 0.8;
+      color: #ffffff;
+      text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
     }
   </style>
 </head>
 <body>
-  <h3>Galxe Auto Clicker</h3>
-  <button id="start">Start Auto Clicker</button>
-  <button id="stop">Stop Auto Clicker</button>
+  <h3>🚀 Galxe Auto Clicker</h3>
+  <p>Automate your task completions with ease!</p>
+
+  <div class="button-container">
+    <button id="start">Start Auto Clicker ✅</button>
+    <button id="stop">Stop Auto Clicker ❌</button>
+  </div>
+
+  <p class="footer">Developed by HappyCuan Airdrop</p>
+
   <script src="popup.js"></script>
 </body>
 </html>
