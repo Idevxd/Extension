@@ -1,16 +1,16 @@
 {
   "manifest_version": 3,
-  "name": "Auto Clicker for Galxe",
+  "name": "Galxe Auto Clicker",
   "version": "1.0",
   "description": "Automates tasks on Galxe.",
   "permissions": ["activeTab", "scripting"],
   "host_permissions": ["*://*.galxe.com/*"],
-  "action": {
-    "default_popup": "popup.html",
-    "default_title": "Click to Start"
-  },
   "background": {
     "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Galxe Auto Clicker"
   },
   "content_scripts": [
     {
