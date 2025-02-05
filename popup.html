@@ -5,93 +5,118 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Galxe Auto Clicker</title>
   <style>
-    /* Background and Container Styling */
+    /* Background Styling */
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Poppins', sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-width: 250px;
-      padding: 20px;
-      background: rgba(255, 255, 255, 0.15);
-      backdrop-filter: blur(10px);
-      border-radius: 15px;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-      margin: 0;
-      color: #fff;
+      min-width: 280px;
+      padding: 25px;
+      background: rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(15px);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      color: #ffffff;
       text-align: center;
+      transition: all 0.3s ease-in-out;
     }
 
+    /* Title */
     h3 {
-      font-size: 22px;
+      font-size: 24px;
+      font-weight: 600;
       margin-bottom: 10px;
       color: #ffffff;
-      text-shadow: 0px 0px 10px rgba(0, 114, 255, 0.5);
+      text-shadow: 0px 0px 10px rgba(0, 114, 255, 0.7);
     }
 
+    /* Subtitle */
     p {
       font-size: 14px;
       margin-bottom: 20px;
-      color: #dddddd;
+      color: #ddd;
     }
 
-    /* Button Styling */
+    /* Button Container */
     .button-container {
       width: 100%;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 12px;
     }
 
+    /* Modern Button Design */
     button {
-      background: linear-gradient(145deg, #007bff, #00c6ff);
+      width: 100%;
+      background: linear-gradient(135deg, #0066ff, #00c6ff);
       border: none;
       padding: 12px;
       font-size: 16px;
       color: white;
+      font-weight: 500;
       border-radius: 8px;
       cursor: pointer;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
 
     button:hover {
-      background: linear-gradient(145deg, #00c6ff, #007bff);
-      transform: translateY(-2px);
-      box-shadow: 0 6px 12px rgba(0, 123, 255, 0.4);
+      background: linear-gradient(135deg, #00c6ff, #0066ff);
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
     }
 
+    /* Stop Button */
     #stop {
-      background: linear-gradient(145deg, #ff4b2b, #ff416c);
+      background: linear-gradient(135deg, #ff4b2b, #ff416c);
+      box-shadow: 0 5px 15px rgba(255, 75, 43, 0.3);
     }
 
     #stop:hover {
-      background: linear-gradient(145deg, #ff416c, #ff4b2b);
+      background: linear-gradient(135deg, #ff416c, #ff4b2b);
+      box-shadow: 0 8px 20px rgba(255, 75, 43, 0.4);
     }
 
+    /* Footer */
     .footer {
-      margin-top: 20px;
+      margin-top: 15px;
       font-size: 12px;
+      color: rgba(255, 255, 255, 0.8);
       opacity: 0.8;
-      color: #ffffff;
-      text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+    }
+
+    /* Animation for Entry */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    body, h3, p, .button-container, button {
+      animation: fadeIn 0.6s ease-in-out;
     }
   </style>
 </head>
 <body>
   <h3>🚀 Galxe Auto Clicker</h3>
-  <p>Automate your task completions with ease!</p>
+  <p>Automate your tasks seamlessly with a single click!</p>
 
   <div class="button-container">
     <button id="start">Start Auto Clicker ✅</button>
     <button id="stop">Stop Auto Clicker ❌</button>
   </div>
 
-  <p class="footer">Developed by You 🤛 </p>
+  <p class="footer">Developed by You 🤛</p>
 
   <script src="popup.js"></script>
 </body>
